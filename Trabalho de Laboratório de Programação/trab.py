@@ -1,5 +1,5 @@
 class Livro:
-    def _init_(self, titulo, autor, ano, genero, isbn):
+    def __init__(self, titulo, autor, ano, genero, isbn):
         self.titulo = titulo
         self.autor = autor
         self.ano = ano
@@ -7,21 +7,21 @@ class Livro:
         self.isbn = isbn
 
 class Membro:
-    def _init_(self, nome, id_membro, data_nascimento, endereco):
+    def __init__(self, nome, id_membro, data_nascimento, endereco):
         self.nome = nome
         self.id_membro = id_membro
         self.data_nascimento = data_nascimento
         self.endereco = endereco
 
 class Emprestimo:
-    def _init_(self, livro, membro, data_emprestimo, data_devolucao_prevista):
+    def __init__(self, livro, membro, data_emprestimo, data_devolucao_prevista):
         self.livro = livro
         self.membro = membro
         self.data_emprestimo = data_emprestimo
         self.data_devolucao_prevista = data_devolucao_prevista
 
 class Biblioteca:
-    def _init_(self):
+    def __init__(self):
         self.livros = []
         self.membros = []
         self.emprestimos = []
